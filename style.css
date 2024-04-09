@@ -1,0 +1,186 @@
+body {
+    background-image: url(./images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.game {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.character {
+    position: absolute;
+    top: 450px;
+    left: 750px;
+    max-width: 100px; 
+    max-height: 100px; 
+}
+
+.border {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -38.4%);
+    z-index: 1500; 
+}
+
+.trees {
+    position: relative; 
+    transform: translate(-1%, 33%);
+    z-index: 1200; 
+}
+
+.fireplace {
+    position: absolute;
+    transform: translate(170%, -130%);
+    z-index: 1000; 
+}
+
+.button_next{
+    position: absolute;
+    transform: translateX(80%) translateY(500%);
+    z-index: 2700;
+}
+.button_int{
+    position: absolute;
+    transform: translateX(335%) translateY(850%);
+    max-width: 180px;
+    z-index: 2000;
+    
+}
+.dia_window_1{
+    position: absolute;
+    z-index: 2500;
+    transform: translateX(70%)translateY(310%);
+}
+.ch_1incorrect{
+    position: absolute;
+    z-index: 2600;
+    transform: translateX(200%)translateY(800%);
+}
+.ch_1correct{
+    position: absolute;
+    z-index: 2600;
+    transform: translateX(460%)translateY(800%); 
+}
+
+.dia_window_2 {
+    display: none; 
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    z-index: 2500;
+}
+
+.button_speak {
+    position: absolute;
+    transform: translateX(400%) translateY(1200%);
+    max-width: 180px;
+    z-index: 2000;
+    /*display: none;*/
+}
+.dia_window_3{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(10%);
+    z-index: 2500;
+}
+.test{
+    position: absolute;
+    z-index: 2500;
+    transform: translateX(300%) translateY(150%);
+}
+.test-window{
+    position: absolute;
+    z-index: 3000;
+    background-color: rgb(229, 225, 203);
+    border: 3px solid rgb(130, 127, 115);
+    transform: translateX(35%)translateY(-100%);
+    columns: 2;
+}
+
+.forest_bg{
+    width: 600px;
+    height: 200px;
+}
+
+.congratulations{
+    background-color: rgb(10, 77, 22);
+    text-align: center;
+    color: rgb(165, 238, 169);
+    border: 5px solid rgb(5, 50, 5);
+}
+.con_b{
+    font-weight: bolder;
+}
+.mini_game{
+    width: 600px;
+    height: 200px;
+    border-bottom: 3px solid;
+    transform: translateX(100%)translateY(-150%);
+    position: absolute;
+    z-index: 3100;
+    background-color: rgb(29, 77, 57);
+    border: 5px solid rgb(5, 50, 5);
+    display: none;
+
+}
+#piggy {
+    width: 121.5px; 
+    height: 77.5px; 
+    background-image: url(./images/piggy.png);
+    background-size: 121.5px 77.5px; 
+    position: absolute;
+    z-index: 3200;
+    top: 120px;
+    transform: scaleX(-1);
+}
+
+
+.jump {
+    animation: jump 0.5s linear;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-100px);
+    }
+    50% {
+        transform: translateY(-150px);
+    }
+    80% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+#grib {
+    background-image: url(./images/grib.png);
+    width: 55px; 
+    height: 40px; 
+    background-size: 55px 40px; 
+    position: absolute;
+    top: 160px;
+    left: 600px;
+    animation: gribMov 1.7s infinite linear;
+}
+
+@keyframes gribMov{
+    0%{
+        left: 600px;
+    }
+    100%{
+        left: -20%;
+    }
+}
